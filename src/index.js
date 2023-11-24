@@ -1,5 +1,3 @@
-/** @format */
-
 const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
@@ -12,9 +10,10 @@ const app = express();
 mongoose.connect(
   process.env.MONGO_URI,
   // { useUnifiedTopology: true, useNewUrlParser: true },
-  console.log("entrou no database")
+  console.log("entrou no daatabase")
 );
 app.use(cors());
 app.use(express.json());
+app.use(routes);
 
-app.listen(3333, () => console.log("serv rodando"));
+app.listen(3030, () => console.log("serv rodando"));
