@@ -39,3 +39,9 @@ const Schema = new mongoose.Schema({
 });
 
 module.exports = mongoose.model("Cart", Schema);
+
+// "address": {
+//   "street": "123 Rua Principal",
+//   "number": "42",
+//   "city": "Cidade Exemplo"
+// },
